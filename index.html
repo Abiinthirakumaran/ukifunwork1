@@ -1,72 +1,183 @@
 <!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>sound Cloud </title>
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/cufon-replace.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/Josefin_Sans_600.font.js"></script>
+<script type="text/javascript" src="js/Lobster_400.font.js"></script>
+<script type="text/javascript" src="js/sprites.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.settings.js"></script>
+<script type="text/javascript" src="js/gSlider.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script src="https://connect.soundcloud.com/sdk.js"></script>
+<script src="js/script.js"></script>
 
-<html>
-	<head>
-		<title> Funny Sound Player</title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://connect.soundcloud.com/sdk.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-		<script src="js/script.js"></script>
+<!--[if lt IE 7]> <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'> <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
+<!--[if lt IE 9]><script src="js/html5.js" type="text/javascript"></script><![endif]-->
+<!--[if IE]><link href="css/ie_style.css" rel="stylesheet" type="text/css" /><![endif]-->
+</head>
+<body id="page1">
+<!-- START PAGE SOURCE -->
 
-	</head>
-	<body>
+<div id="main">
+  <header>
+   <nav>
+      <ul>
+        <li class="active"><a href="index.html">About</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+      <!--  <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav> -->
+    <h1><a href="index.html">FUNNY MUSICS</a></h1>
+  <!--  <div class="header-slider">
+      <ul>
+        <li>This is one of free website templates created by TemplateMonster.com team. This website template is optimized for 1024X768 screen resolution.</li>
+        <li>This website template has several pages: About, Audio, Video, Gallery, Tour Dates, Contacts (note that contact us form – doesn’t work).</li>
+        <li>This Free Music Website Template goes with two packages – with PSD source files and without them. PSD source files are available for free.</li>
+      </ul>
+    </div> -->
+    <a href="#" class="hs-prev"><img src="images/prev.png" alt=""></a> <a href="#" class="hs-next"><img src="images/next.png" alt=""></a> </header>
+  <div class="tumbvr">
+    <div class="tumbvr-mask"></div>
+    <ul>
+  <!--   <li><img src="images/1.jpeg" alt=""></li> -->
+     <li><img src="images/22.jpg" alt=""></li>
+    <!--  <li><img src="images/33.jpeg" alt=""></li>
+   <li><img src="images/04.jpg" alt=""></li>
+      <li><img src="images/05.jpg" alt=""></li>
+      <li><img src="images/06.jpg" alt=""></li>
+      <li><img src="images/07.jpg" alt=""></li>
+      <li><img src="images/08.jpg" alt=""></li>
+      <li><img src="images/09.jpg" alt=""></li>
+      <li><img src="images/10.jpg" alt=""></li> -->
+    </ul>
+  </div>
+  <table>
+    <tr>
+   <td>
+<article id="content">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <h2>New Album</h2>
+        <img src="images/1.jpeg"> <a href="#" class="more">Read More</a></div>
 
-				<!-- Header -->
-			<!--		<header id="header">
-						<h1><a href="index.html"><strong>Sound Cloud</strong> Player</a></h1>
-						<nav>
-							<ul>
-								<li><a href="#footer" class="icon fa-info-circle">About</a></li>
-							</ul>
-						</nav>
-					</header>
--->
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="images/fulls/1.jpg" id="start1" class="image"><img src="images/thumbs/1.gif" alt="" /></a>
-							<h2>Sound Angry</h2>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/2.jpg" id="start2" class="image"><img src="images/thumbs/2.jpg" alt="" /></a>
-							<h2>Sound proud</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/3.jpeg" id="start3" class="image"><img src="images/thumbs/3.jpeg" alt="" /></a>
-							<h2>Sound jelous</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/4.jpg" id="start4" class="image"><img src="images/thumbs/4.jpeg" alt="" /></a>
-							<h2>Sound Sad</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/5.jpg" id="start5" class="image"><img src="images/thumbs/5.jpg" alt="" /></a>
-							<h2>Sound Happy</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/6.jpg" id="start6" class="image"><img src="images/thumbs/4.jpeg" alt="" /></a>
-							<h2>Sound Sad</h2>
-							<p></p>
-						</article>
-						</div>
+    </div>
+</article>
+  </div>
+</td>
+      <!-- audio player begin -->
+  <td>
+      <!-- audio player end -->
 
 
-			</div>
+      <!-- Main -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <table>
+        <tr>
+          <caption style="color:"red""><h1>Most Favourable Songs</h1></caption>
+        <div id="main">
+          <td>
+            <img src="images/thumbs/1.jpg" alt="" id="start1" width="200px" height="200px"; />
+            <p>
+              i will give Sound Cool to you </p>
+            </td>
+            <br>
+            <td>
 
-	</body>
+            <img src="images/thumbs/3.jpeg" alt="" id="start2" width="200px" height="200px"; />
+            <p> Don't Click me!! I don't know your's Elegant</p>
+          </td>
+          <tr>
+            <td>
+                   <img src="images/thumbs/6.jpg" alt="" id="start3" width="200px" height="200px"; />
+                   <p>If you click me!I will Make Fun</p>
+                 </td>
+                 <td>
+
+                   <img src="images/thumbs/4.jpeg" alt="" id="start4" width="200px" height="200px"; />
+                   <p > If you Have ? please Cick me!! (Think)</p>
+                 </td>
+               </tr>
+   <tr>
+     <td>
+            <img src="images/thumbs/5.jpg" alt="" id="start5" width="200px" height="200px"; />
+            <p>Have You Dream? </p>
+          </td>
+          <td width="200px" height="200px";>
+
+            <img src="images/thumbs/2.jpg" alt="" id="start6" width="200px" height="200px"; />
+            <p>You haven't Nothing ** Click Me </p>
+          </td>
+        </tr>
+          </div>
+        </tr>
+      </table>
+  <div class="af clear"></div>
+</div>
+</td>
+</tr>
+</table>
+<footer>
+  <div class="footerlink">
+    <p class="lf">Copyright &copy; 2017 <a href="#">SiteName</a> - All Rights Reserved</p>
+    <p class="rf">Design by <a href="http://www.templatemonster.com/">AbiramyInthirakumaran</a></p>
+    <h4>Find Me</h4>
+       <ul class="soc-ico">
+         <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+         <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+         <li><a href="#"><img src="images/myspace.png" alt=""></a></li>
+         <li><a href="#"><img src="images/linkedin.png" alt=""></a></li>
+       </ul>
+    <div style="clear:both;"></div>
+  </div>
+</footer>
+<script type="text/javascript">Cufon.now()
+$(function () {
+    $('nav,.more,.header-more').sprites()
+
+    $('.header-slider').gSlider({
+        prevBu: '.hs-prev',
+        nextBu: '.hs-next'
+    })
+})
+$(window).load(function () {
+    $('.tumbvr')._fw({
+        tumbvr: {
+            duration: 2000,
+            easing: 'easeOutQuart'
+        }
+    }).bind('click', function () {
+        location = "index-3.html"
+    })
+    $('a[rel=prettyPhoto]').each(function () {
+        var th = $(this),
+            pb
+            th.append(pb = $('<span class="playbutt"></span>').css({
+                opacity: .7
+            }))
+            pb.bind('mouseenter', function () {
+                $(this).stop().animate({
+                    opacity: .9
+                })
+            }).bind('mouseleave', function () {
+                $(this).stop().animate({
+                    opacity: .7
+                })
+            })
+    }).prettyPhoto({
+        theme: 'dark_square'
+    })
+})
+</script>
+<!-- END PAGE SOURCE -->
+</body>
 </html>
